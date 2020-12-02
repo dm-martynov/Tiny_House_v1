@@ -1,6 +1,8 @@
 import { Database } from './../lib/types'
 import { MongoClient } from 'mongodb'
 
+require('dotenv').config()
+
 const uri = <string>process.env.DB_URL
 
 export const connectDatabase = async (): Promise<Database> => {

@@ -27,6 +27,7 @@
   },
   "scripts": {
     "start": "set NODE_ENV=dev&& nodemon src/index.ts",
-    "build": "tsc -p ./"
+    "build": "tsc -p ./",
+    "seed": "ts-node temp/seed.ts"
   }
 }

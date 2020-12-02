@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ path: '.env' })
 
 import { connectDatabase } from './database/index'
 import express, { Application } from 'express'
