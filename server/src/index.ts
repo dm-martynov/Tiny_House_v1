@@ -3,7 +3,7 @@ require('dotenv').config({ path: '.env' })
 import { connectDatabase } from './database/index'
 import express, { Application } from 'express'
 import { ApolloServer } from 'apollo-server-express'
-import { typeDefs, resolvers } from './graphql'
+import { typeDefs, resolvers } from './graphql/graphqlRoot'
 
 const mount = async (app: Application) => {
   const db = await connectDatabase()
